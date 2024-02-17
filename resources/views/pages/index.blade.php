@@ -3,5 +3,7 @@
     <title>Home</title>
 @endsection
 @section('content')
-    <h1>Hello, World!</h1>
+    @foreach ($trains as $train)
+        <div>{{$train['acengy']}}</div>
+    @endforeach
 @endsection
